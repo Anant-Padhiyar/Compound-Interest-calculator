@@ -1,0 +1,98 @@
+/*.light-mode {
+  --table-bg-color: white;
+  --table-text-color: black;
+  --modal-bg-color: white;
+  --modal-text-color: black;
+  --close-btn-color: black;
+  --modal-border-color: var(--modal-text-color);
+}
+
+.dark-mode {
+  --table-bg-color: black;
+  --table-text-color: white;
+  --modal-bg-color: black;
+  --modal-text-color: white;
+  --close-btn-color: white;
+  --modal-border-color: var(--modal-text-color); 
+}
+*/
+.custom-table thead th,
+.custom-table tbody tr th,
+.custom-table tbody td {
+  background-color: var(--table-bg-color);
+  color: var(--table-text-color);
+}
+
+/* Jumbotron */
+.custom-bg-light {
+  background-color: #f0f0f0 !important; 
+}
+
+.custom-bg-dark {
+  background-color: #101010 !important; 
+}
+/* Jumbotron */
+
+.hover-effect:hover {
+  filter: brightness(85%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-select {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+.bar {
+  width: 27px;
+  height: 2px;
+  /* background-color: black; */
+  margin: 6px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Hamburger menu icon animation for open state */
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-3px, 3px) scaleX(1); /* Adjust the scaleX value to visually equalize the size */
+}
+
+.open .bar:nth-child(2) {
+  transform: rotate(45deg) translate(-3px, -3px) scaleX(1); /* Adjust the scaleX value to visually equalize the size */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 990px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-links li a {
+    color: white;
+  }
+
+  .open .bar {
+    margin: 6; /* Remove 'px' unit here to avoid CSS syntax error */
+  }
+}
+
+
+
+
+
+  
